@@ -10,7 +10,16 @@ The steps are:
 ### [Generate Certificates](#generate-certificates)
 The first step for using this solution is to generate the necessary Self Signed X509 certificates.
 
-These instructions will use Windows commands, during each step you will be asked to specify passwords to secure the certificates - MAKE A NOTE OF THESE
+These instructions will use Windows commands, during each step you will be asked to specify passwords to secure the certificates.
+
+The pvk2pfx command will use the same password as set for the private key, or you can add /po {PFXPASSWORD} to set a specific PFX password
+
+ - MAKE A NOTE OF THESE
+
+References:
+[makecert](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/makecert)
+[pvk2pfx](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/pvk2pfx)
+
 
 #### RootCA
 ~~~
