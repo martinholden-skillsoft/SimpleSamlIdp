@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2>Getting started</h2>
+    <p>
+        This simple SAML 2 Identity Provider Implementation requires the user to have a X509 Client Certificate.
+    </p>
+    <p>
+        The page will extract from the certificate subject:
+        <ul>
+            <li>CN - Common Name - This will be sent as the SAML Subject</li>
+            <li>G - Given Name - This will be sent as an assertion of type http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname</li>
+            <li>SN - Surname - This will be sent as an assertion of type http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname</li>
+            <li>E - Email Address - This will be sent as an assertion of type http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</li>
+        </ul>
+    </p>
+</div>

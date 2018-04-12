@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>The Claims as extracted from the Client Certificate</h2>
+        <p>
+            @foreach (var claim in ViewBag.Claims)
+            {
+                <strong>@claim.Type</strong> <br /> <span style="padding-left: 10px">Value: @claim.Value</span> <br />
+            }
+        </p>
+    </div>
+</div>
+
